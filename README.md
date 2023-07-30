@@ -11,14 +11,16 @@ The project is built using:
 
 # Usage
 
-- clone the repo
+- Clone the repo
+- Navigate to the repo folder
 
 ## Backend
 
-- yarn install
-- yarn start
+- ```yarn install```
+- ```yarn start```
 
 ## Mobile
-
-- yarn install 
-- yarn start
+- Open a new terminal 
+- ```cd my-books-app```
+- ```yarn install```
+- ```yarn start```
