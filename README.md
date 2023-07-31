@@ -7,7 +7,8 @@
   <br>
 </h1>
 
-<h4 align="center">My Books is a book management system that allows users to perform CRUD operations on books.</h4>
+<h3 align="center">My Books is a book management system that allows users to perform CRUD operations on books.</h3>
+
  
 
  
@@ -17,7 +18,7 @@
 
 # Technologies used
 
-NodeJS/Express/Prisma/GraphQL/Apollo Server/Prisma/MySQL/Jest/ React Native /Expo/GraphQl/Jest.
+NodeJS/Express/Prisma/GraphQL/Apollo Client/MySQL/Jest/ReactNative/Expo/Jest.
 
 # Key Features
 
@@ -28,8 +29,8 @@ NodeJS/Express/Prisma/GraphQL/Apollo Server/Prisma/MySQL/Jest/ React Native /Exp
 - Prisma as the ORM connected to a remote MySQL database. 
 - GraphQL APIs using Apollo Server to perform CRUD operations on books.
 - Validation and error handling for the APIs.
-- Authentication and authorization using a library like JWT or OAuth.
-- Pagination or infinite scrolling for the book list.
+- Authentication and authorization using JWT.
+- Infinite scrolling for the book list.
 - Search capabilities to the book list.
 - Unit tests for the backend APIs using *Jest*.
 
@@ -41,14 +42,14 @@ NodeJS/Express/Prisma/GraphQL/Apollo Server/Prisma/MySQL/Jest/ React Native /Exp
 - Search capabilities to the book list.
 - Ability to create/update/delete books with the required validations.
 - Ability to show the book details and navigate to the book website.
-- Proper error handling for API errors or network errors.
+- Proper error handling for API and network errors.
 - Proper loading state handling using the context API and Apolo client link.
 - Authentication and authorization using a library like JWT or OAuth.
-- Pagination or infinite scrolling for the book list.
+- Infinite scrolling for the book list.
 - Integration tests for the mobile components.
 - Multi-theme support Light/Dark themes.
 - Layout animations & Lottie animations.
-- Light/Dark theme supported.
+- Light/Dark theme support.
 
 # Usage
 
