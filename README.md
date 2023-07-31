@@ -11,10 +11,9 @@
  
 
  
-<h1 align="center">
-<img src="https://github.com/Baraa-bi/MyBooks/assets/16765528/bdf4a326-dec4-4b11-b703-174c2dc78a27" height="500">
-</h1>
-
+<div align="center">
+<video src='https://github.com/Baraa-bi/MyBooks/assets/16765528/bdf4a326-dec4-4b11-b703-174c2dc78a27' height="500" />
+</div>
 
 # Technologies used
 
