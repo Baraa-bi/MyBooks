@@ -1,7 +1,6 @@
 // src/App.tsx
 
 import React, {
-  ReactNode,
   useCallback,
   useEffect,
   useLayoutEffect,
@@ -12,7 +11,6 @@ import {
   SafeAreaView,
   StyleSheet,
   TouchableOpacity,
-  View,
 } from "react-native";
 import { Book, BookCardMode } from "../../types";
 import BookCard from "../../components/BookCard";
@@ -134,20 +132,16 @@ const HomeScreen: React.FC<Props> = ({ navigation }) => {
     return null;
   };
 
-  // Debounced search function using Lodash
-  const debouncedSearchBooks = debounce((query) => {
-    return setSearchQuery(query);
-  }, 2000);
-
-  useEffect(() => {
-    debouncedSearchBooks(searchText);
-  }, [searchText]); 
+  const debouncedSearchBooks = debounce(setSearchQuery, 500);
 
   const renderListHeaderComponent = (
     <SearchBar
       searchValue={searchText}
       onRightIconPress={onRightIconPress}
-      onSearchValueChange={setSearchText}
+      onSearchValueChange={(q) => {
+        debouncedSearchBooks(q);
+        setSearchText(q);
+      }}
       rightIcon={listMode === LIST_MODE.GRID ? "list" : "grid"}
     />
   );

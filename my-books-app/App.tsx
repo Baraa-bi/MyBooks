@@ -4,7 +4,8 @@ import AppNavigator from "./src/navigation";
 import Loading from "./src/components/Loading";
 import AppApolloProvider from "./src/graphql/AppApolloProvider";
 import { AppContextProvider } from "./src/lib/contexts/AppContext";
-
+import { LogBox } from "react-native";
+LogBox.ignoreAllLogs(true);
 export default function App() {
   return (
     <AppContextProvider>

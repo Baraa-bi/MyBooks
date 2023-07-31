@@ -4,7 +4,7 @@ import { Book, BookFormFields } from "../../types";
 import { useLayoutEffect } from "react";
 import { SafeAreaView, StyleSheet } from "react-native";
 import { Screens } from "../../config/constants";
-import { useMutation } from "@apollo/client";
+import { useApolloClient, useMutation } from "@apollo/client";
 import {
   CREATE_BOOK_MUTATION,
   UPDATE_BOOK_MUTATION,
@@ -12,6 +12,7 @@ import {
 import { GET_ALL_BOOKS } from "../../graphql/queries/book";
 
 export default function ManageBook({ navigation }: any) {
+  const client = useApolloClient();
   const { params }: any = useRoute();
 
   const bookData: Book = params?.book ?? {};
@@ -26,7 +27,6 @@ export default function ManageBook({ navigation }: any) {
     onCompleted: ({ updateBook }) => {
       navigation.navigate(Screens.BOOK_DETAILS, { book: updateBook });
     },
-    refetchQueries: [GET_ALL_BOOKS],
   });
 
   const [createBook] = useMutation(CREATE_BOOK_MUTATION, {

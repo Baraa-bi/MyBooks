@@ -1,4 +1,4 @@
-export const API_BASE_URL = "http://10.0.0.6:4000/graphql";
+export const API_BASE_URL = "http://localhost:4000/graphql";
 
 export const PAGE_SIZE = 20;
 
